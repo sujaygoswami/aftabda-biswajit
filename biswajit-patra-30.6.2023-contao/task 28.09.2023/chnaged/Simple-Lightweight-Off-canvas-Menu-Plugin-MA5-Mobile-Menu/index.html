@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>MA5 mobile menu</title>
+    <meta name="description" content="Simple and ultralight jQuery mobile menu with panels">
+    <meta name="keywords" content="ma5-mobile-menu, mobile menu query, ultralight mobile menu, simple mobile menu">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://mobile-menu.ma5.pl/">
+    <meta name="twitter:title" content="MA5 mobile menu">
+    <meta name="twitter:description" content="Simple and ultralight jQuery mobile menu with panels">
+    <meta name="twitter:image" content="http://mobile-menu.ma5.pl/images/card-image.jpg">
+    <meta name="twitter:site" content="MA-5">
+
+    <meta property="og:title" content="MA5 mobile menu">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://mobile-menu.ma5.pl/">
+    <meta property="og:image" content="http://mobile-menu.ma5.pl/images/card-image.jpg">
+    <meta property="og:site_name" content="MA-5">
+    <meta property="og:description" content="Simple and ultralight jQuery mobile menu with panels">
+
+    <link rel="canonical" href="http://mobile-menu.ma5.pl/">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/manifest.json">
+    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#fc4c02">
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <!-- Site Stylesheets -->
+    <link href="./css/site.min.css" rel="stylesheet" type="text/css">
+    <!-- Site JavaScripts -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/site.min.js"></script>
+
+    <!-- ma5menu -->
+    <link href="./css/ma5-menu.min.css" rel="stylesheet" type="text/css">
+    <script src="./js/ma5-menu.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            ma5menu({
+                menu: '.site-menu',
+                activeClass: 'active',
+                footer: '#ma5menu-tools',
+                position: 'left',
+                closeOnBodyClick: true
+            });
+        });
+    </script>
+
+</head>
+<body class="preload">
+<nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <article class="container">
+        <header class="site-header ma5-menu-header">
+            <h1 class="my-4">MA5 mobile menu</h1>
+            <p>jQuery mobile menu with panels.</p>
+        </header>
+
+        <form class="my-4" id="selectPosition">
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="pos1"><input id="pos1" class="form-check-input" type="radio" name="position" value="1" checked="checked"> Left</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="pos2"><input id="pos2" class="form-check-input" type="radio" name="position" value="2"> Right</label>
+            </div>
+                    </form>
+
+
+                
+<!-- mobile menu toggle button start -->
+<button class="ma5menu__toggle" type="button">
+    <span class="ma5menu__icon-toggle"></span> <span class="ma5menu__sr-only">Menu</span>
+</button>
+<!-- mobile menu toggle button end -->
+        <div style="display: none;">
+
+    <!-- source for mobile menu start -->
+    <ul class="site-menu">
+        <li>
+            <a href="index-page.html">Shop</a>
+            <ul>
+                <li><a href="index-page.html">Products</a></li>
+                <li>
+                    <a href="index-page.html">Collections</a>
+                    <ul>
+                        <li><a href="index-page.html">Premium</a></li>
+                        <li><a href="index-page.html">Common</a></li>
+                        <li>
+                            <a href="index-page.html">Exclusive</a>
+                            <ul>
+                                <li><a href="index-page.html">First</a></li>
+                                <li><a href="index-page.html">Secound</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index-page.html">Other</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index-page.html">Accesories</a>
+                    <ul>
+                        <li><a href="index-page.html">Small</a></li>
+                        <li><a href="index-page.html">Medium</a></li>
+                        <li><a href="index-page.html">Large</a></li>
+                    </ul>
+                </li>
+                <li><a href="index-page.html">Cards</a></li>
+                <li>
+                    <a href="index-page.html">Sets</a>
+                    <ul>
+                        <li><a href="index-page.html">Example 1</a></li>
+                        <li><a href="index-page.html">Example 2</a></li>
+                        <li><a href="index-page.html">Example 3</a></li>
+                        <li><a href="index-page.html"><b>Example 4</b></a></li>
+                        <li><a href="index-page.html">Example 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="index-page.html">Lookbook</a>
+            <ul>
+                <li><a href="index-page.html">For business</a></li>
+                <li><a href="index-page.html">Premium Area</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="index-page.html">Campaigns</a>
+            <ul>
+                <li>
+                    <a href="index-page.html">Summer 2019</a>
+                    <ul>
+                        <li><a href="index-page.html">Winter 2018</a></li>
+                        <li><a href="index-page.html">Spring 2017</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="index-page.html">Brand</a>
+            <ul>
+                <li><a href="index-page.html">About us</a></li>
+                <li><a href="index-page.html">Press</a></li>
+            </ul>
+        </li>
+        <li><a href="index-page.html">Contact</a></li>
+    </ul>
+    <!-- source for mobile menu end -->
+
+    <!-- source for mobile menu footer start -->
+    <div id="ma5menu-tools" class="ma5menu__tools">
+        footer <a href="index-page.html">content</a> here
+    </div>
+    <!-- source for mobile menu footer end -->
+</div>
+
+
+        <h2 class="my-4">How to use</h2>
+        <p>The script copies the desktop menu and converts it to the mobile menu. Sources: <a href="https://github.com/ma-5/ma5-mobile-menu" rel="noopener noreferrer"  target="_blank">GitHub</a></p>
+
+        <ol>
+
+            <li>Select the desktop menu with the <code>menu</code> parameter to be transformed into the mobile menu. The HTML structure in the desktop menu can be any. The condition is to keep the structure of the unordered list in the desktop menu. Parameter should indicate the main &lt;ul&gt; desktop menu.</li>
+
+            <li>In the next step, enter the name of the active class in the desktop menu using the <code>activeClass</code> parameter.</li>
+
+            <li>You can add the footer of the mobile menu using the <code>footer</code> parameter, which should indicate the container <code>&lt;div id="ma5menu-tools" class="ma5menu__tools"&gt;...&lt;/div&gt;</code> containing the content for the footer.</li>
+
+            <li>By using the <code>position</code> parameter ('left' / 'right'), you can set the left or right position for the mobile menu.</li>
+
+            <li>The <code>closeOnBodyClick</code> parameter (true / false) automatically closes the menu after clicking outside the menu area.</li>
+        </ol>
+<pre class="prettyprint lang-js linenums"><code>&lt;script&gt;
+$(document).ready(function () {
+    ma5menu({
+        menu: '.site-menu',
+        activeClass: 'active',
+        footer: '#ma5menu-tools',
+        position: 'left',
+        closeOnBodyClick: true
+    });
+});
+&lt;/script&gt;</code></pre>
+<p>In last step add to page menu toggle button.</p>
+<pre class="prettyprint lang-html linenums"><code>&lt;button class="ma5menu__toggle" type="button"&gt;
+    &lt;span class="ma5menu__icon-toggle"&gt;&lt;/span&gt;&lt;span class="ma5menu__sr-only"&gt;Menu&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <h2 class="my-4">Example</h2>
+        <pre class="prettyprint lang-html linenums"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang='en'&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;MA5 mobile menu&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+        &lt;meta name="MobileOptimized" content="width"&gt;
+        &lt;meta name="HandheldFriendly" content="true"&gt;
+        &lt;meta http-equiv="x-ua-compatible" content="IE=edge"&gt;
+
+        &lt;!-- jQuery --&gt;
+        &lt;script src="./js/jquery.js"&gt;&lt;/script&gt;
+
+        &lt;!-- ma5menu --&gt;
+        &lt;link href="./css/ma5-menu.min.css" rel="stylesheet" type="text/css"&gt;
+        &lt;script src="./js/ma5-menu.min.js"&gt;&lt;/script&gt;
+
+        &lt;!-- Call the script --&gt;
+        &lt;script&gt;
+            $(document).ready(function () {
+                ma5menu({
+                    menu: '.site-menu',
+                    activeClass: 'active',
+                    footer: '#ma5menu-tools',
+                    position: 'left',
+                    closeOnBodyClick: true
+                });
+            });
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;!-- mobile menu toggle button start --&gt;
+        &lt;button class="ma5menu__toggle" type="button"&gt;
+            &lt;span class="ma5menu__icon-toggle"&gt;&lt;/span&gt;&lt;span class="ma5menu__sr-only"&gt;Menu&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;!-- mobile menu toggle button end --&gt;
+
+        &lt;!-- source for mobile menu start --&gt;
+        &lt;ul class="site-menu"&gt;
+            &lt;li&gt;
+                &lt;a href="index-page.html"&gt;Shop&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="index-page.html"&gt;Products&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="index-page.html"&gt;Collections&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Premium&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Common&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href="index-page.html"&gt;Exclusive&lt;/a&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="index-page.html"&gt;First&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="index-page.html"&gt;Secound&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Other&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="index-page.html"&gt;Accesories&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Small&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Medium&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Large&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href="index-page.html"&gt;Cards&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="index-page.html"&gt;Sets&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Example 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Example 2&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Example 3&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="active"&gt;&lt;a href="index-page.html"&gt;&lt;b&gt;Example 4&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Example 5&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="index-page.html"&gt;Lookbook&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="index-page.html"&gt;For business&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="index-page.html"&gt;Premium Area&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="index-page.html"&gt;Campaigns&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;a href="index-page.html"&gt;Summer 2019&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Winter 2018&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="index-page.html"&gt;Spring 2017&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="index-page.html"&gt;Brand&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="index-page.html"&gt;About us&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="index-page.html"&gt;Press&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href="index-page.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;!-- source for mobile menu end --&gt;
+
+        &lt;!-- source for mobile menu footer start --&gt;
+        &lt;div id="ma5menu-tools" class="ma5menu__tools"&gt;
+            footer &lt;a href="index-page.html"&gt;content&lt;/a&gt; here
+        &lt;/div&gt;
+        &lt;!-- source for mobile menu footer end --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    </article>
+
+
+</body>
+</html>
