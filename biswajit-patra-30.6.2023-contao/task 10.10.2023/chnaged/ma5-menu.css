@@ -703,11 +703,11 @@
   background-color: transparent;
 }
 
-.ma5menu__panel > ul li a.current{
+.ma5menu__panel > ul li a.current, .ma5menu__panel > ul li a.mobile_parent_menu_active{
   background-color: #a9eeb2;
 }
 
-.ma5menu__btn--enter.current{
+.ma5menu__btn--enter.current, .ma5menu__btn--enter.mobile_parent_menu_active{
   background-color: #a9eeb2;
 }
 
