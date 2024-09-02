@@ -1,0 +1,549 @@
+/**
+ * @Author: andreasprietzel
+ * @Date:   2019-07-02T14:02:05+02:00
+ * @Last modified by:   andreasprietzel
+ * @Last modified time: 2019-09-25T18:08:17+02:00
+ */
+
+
+
+header
+{
+	min-height      : 96px;
+	background-color: #f7f5f7;
+	position        : fixed;
+	top             : 0;
+	left            : 0;
+	right           : 0;
+	z-index         : 10;
+}
+
+header.ShowMobileMenu
+{
+	border-bottom: 1px solid gray;
+}
+
+
+.NavWrapper
+{
+	/*display: flex;*/
+}
+
+header nav
+{
+	display         : flex;
+    align-items     : center;
+	padding         : 10px 0;
+	float           : right;
+	position        : relative;
+    top             : 50%;
+    transform       : translateY(-50%);
+	/*padding-bottom: 250px;
+	top             : 169px;*/
+	padding-bottom  : 0;
+	top             : 45px;
+}
+
+header nav:hover
+{
+	padding-bottom: 349px;
+    top           : 220px;
+}
+
+header nav:not(:first-child) > ul
+{
+	border-right  : 1px solid #76913b;
+	padding-top   : 10px;
+    padding-bottom: 10px;
+}
+
+header div
+{
+	position: relative;
+
+	height: 96px;
+}
+
+header nav ul
+{
+	margin              : 0;
+	padding             : 0;
+    list-style-type     : none;
+    margin-block-start  : 0;
+    margin-block-end    : 0;
+    margin-inline-start : 0;
+    margin-inline-end   : 0;
+    padding-inline-start: 0;
+	float               : left;
+}
+
+header nav ul.level_2
+{
+	display         : none;
+	position        : absolute;
+	padding-top     : 10px;
+	background-color: #f7f5f7;
+}
+
+header nav li:hover ul.level_2,
+header nav li ul.level_2:hover
+{
+	display: block;
+}
+
+header nav ul.level_2 li
+{
+	display: block;
+	float: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-left: 3px solid transparent;
+	padding-left: 20px;
+}
+
+header nav:not(.LanguageSelector) ul.level_2 li:hover
+{
+	border-left: 3px solid #76913b;
+}
+
+header nav ul.level_2
+{
+	padding-bottom: 15px;
+}
+
+header nav li
+{
+	display: block;
+	float: left;
+}
+
+header nav li> a,
+header nav li> span,
+header nav li> strong
+{
+	font-family    : "Open Sans";
+	font-size      : 16px;
+	padding        : 20px;
+	line-height    : 20px;
+	font-weight    : 400;
+	color          : #777;
+	text-decoration: none;
+	padding-left:0px !important;
+}
+
+header nav li> span.active,
+header nav li> strong.active
+{
+	color: #76913b;
+
+}
+
+header nav ul.level_2 li.active
+{
+	border-left: 3px solid #76913b;
+}
+
+header nav li:last-child
+{
+	margin-right: 30px;
+}
+
+header nav:first-child li:first-child
+{
+	margin-left: 30px;
+}
+
+header .Logo
+{
+	position: relative;
+	top: 10px;
+	height: calc(100% - 10px);
+	width: auto;
+}
+
+/*Mobiles Menü*/
+header .MobileMenu
+{
+	display: none;
+}
+
+header .MobileMenu .MobileMenuIcon
+{
+	margin: 10px 32px 0 48px;
+	font-size: 30px;
+	margin-top: 26px;
+	cursor: pointer;
+	color: #76913b;
+}
+
+header .MobileMenu .MobileMenuIcon:hover
+{
+}
+
+header .MobileMenu nav li,
+header .MobileMenu nav
+{
+	display: block;
+	float: none;
+	top: 0;
+	transform: none;
+}
+
+header .MobileMenu nav:first-child li:first-child
+{
+	margin: 0;
+}
+
+header .MobileMenu nav:not(:first-child)
+{
+	border: 0;
+}
+
+header .MobileMenu .Menuitems
+{
+	display: none;
+}
+
+header.ShowMobileMenu .Menuitems
+{
+	display         : block;
+	position        : absolute;
+	height          : 100vh;
+	top             : 97px;
+	background-color: #f7f5f7;
+}
+
+header .Desktop .SearchIcon
+{
+	float        : right;
+    position     : absolute;
+    right        : 10px;
+    line-height  : 107px;
+	cursor       : pointer;
+	color        : #6d6d6d;
+	padding-right: 10px;
+	z-index      : 10;
+}
+
+header .LanguageSelector
+{
+	margin-top: 3px;
+}
+
+header nav.LanguageSelector:hover
+{
+	margin-top: 3px;
+}
+
+header .LanguageSelector img
+{
+	min-width: 28px;
+	max-width: 28px;
+	height: auto;
+}
+
+header .LanguageSelector li.submenu span:after
+{
+	content    : "\f107";
+	font       : normal normal normal 14px/1 FontAwesome;
+	margin-left: 5px;
+	position   : absolute;
+	right      : 15px;
+    top        : 17px;
+}
+
+header .LanguageSelector li
+{
+	cursor: pointer;
+}
+
+header .LanguageSelector ul.level_2 li
+{
+	width        : auto;
+	text-align   : center;
+	margin-left  : 0px;
+	border-left  : 0px;
+	padding-left : 15px;
+	padding-right: 15px;
+}
+
+header nav.LanguageSelector ul.level_2
+{
+	padding-bottom: 0;
+	margin-left: -15px;
+}
+
+header nav.LanguageSelector ul.level_2 li:hover
+{
+	background-color: #76913b;
+}
+
+
+body header .MobileMenu .LanguageSelector
+{
+	display: none;
+}
+
+.SearchFrame
+{
+	overflow: hidden;
+}
+
+
+
+ul li.lang-de a, ul li.lang-en a {
+	background: url("../Res/LanguageFlags/de.png") no-repeat center right;
+	position: relative;
+	padding: 0 25px;
+	background-position-y: 4.5px;
+}
+ul li.lang-en a {background: url("../Res/LanguageFlags/en.png") no-repeat center right; background-position-y: 4.5px;}
+
+ul li.lang-de a span, ul li.lang-en a span {
+	position: absolute;
+	top: 1px;
+	right: 0;
+}
+
+
+
+/*Mobiles Menü.Ende*/
+
+/*
+    Desktop extra small (oder landscape tablet?)
+    1200px = 0.625%
+*/
+@media (max-width: 1470px)
+{
+	header nav li> a,
+	header nav li> span,
+	header nav li> strong
+	{
+		font-size      : calc(16px * 0.725);
+		padding        : calc(20px * 0.725);
+		line-height    : calc(20px * 0.725);
+		font-weight    : calc(400 * 0.725);
+	}
+}
+
+/*
+    Tablet landscape
+    960px = 0.5%
+    Bootsrap geht bis 992px statt 960px...
+*/
+@media (max-width: 1199px)
+{
+	header nav li> a,
+	header nav li> span,
+	header nav li> strong
+	{
+		font-size      : calc(16px * 0.6);
+		padding        : calc(20px * 0.4);
+		line-height    : calc(20px * 0.6);
+		font-weight    : calc(400 * 0.6);
+	}
+}
+
+
+
+
+@media screen and (max-width: 1380px) and (min-width: 1200px)
+{
+	header nav li> a
+	{
+		padding: 7px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px)
+{
+	header nav li> a,
+	header nav li> span
+	{
+		/*font-size: 12px;
+		padding: 7px;*/
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1080px) {
+	.Desktop .col-md-3 {width: 16%;}
+	.Desktop .col-md-8 {width: 74%;}
+	.Desktop .col-md-1 {width: 10%;}
+	header .Desktop .SearchIcon {right: 10px;}
+}
+
+@media screen and (max-width: 992px)
+{
+	header .Desktop
+	{
+		display: none;
+	}
+
+	header .MobileMenu
+	{
+		display: block;
+	}
+
+	header nav
+	{
+		margin-top: 60px;
+	}
+
+	header nav li
+	{
+		margin-bottom: 15px !important;
+	}
+
+	header nav li a
+	{
+		font-weight: 900;
+	}
+
+	header .MobileMenu nav li
+	{
+		width: 100%;
+		float: left;
+	}
+
+	#wrapper
+	{
+		z-index: 10;
+	}
+
+	header.ShowMobileMenu .Menuitems,
+	header.ShowMobileMenu .Menuitems .mod_navigation,
+	header.ShowMobileMenu .Menuitems .mod_navigation ul
+	{
+		overflow-y: scroll;
+	}
+
+	header.ShowMobileMenu .Menuitems .mod_navigation:last-child
+	{
+		margin-top: 15px;
+		margin-left: -15px;
+		border-top: 1px solid gray;
+	}
+
+	header.ShowMobileMenu .Menuitems .mod_navigation:last-child ul
+	{
+		border: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	header.ShowMobileMenu .Menuitems .mod_navigation:last-child ul li
+	{
+		display: inline-block;
+		flex: 1;
+		margin: 0;
+		text-align: center;
+	}
+
+	header nav ul.level_2
+	{
+		padding-bottom: 0;
+	}
+
+	header nav ul.level_2 li
+	{
+		margin-bottom: 0 !important;
+	}
+
+	header nav li> a,
+	header nav li> span,
+	header nav li> strong
+	{
+		font-size: 14px;
+	}
+
+	body header nav ul.level_2
+	{
+		display    : block;
+		position   : relative;
+		margin-left: 15px;
+	}
+
+	header.ShowMobileMenu .Menuitems
+	{
+		height: calc(100vh - 97px);
+	}
+
+	header nav:hover
+	{
+		padding-bottom: 0;
+	}
+
+	header .SearchIcon
+	{
+		display: none;
+	}
+
+	header .MobileMenu .SearchIcon
+	{
+		display : block;
+		position: absolute;
+		right   : 15px;
+		top     : 120px;
+		display: none;
+	}
+
+	header.ShowMobileMenu .SearchIcon
+	{
+		display: block;
+	}
+
+	.SearchFrame .SearchInput
+	{
+		font-size: 13px;
+	    margin   : 15px;
+	    padding  : 0;
+	    width    : calc(100% - 30px);
+	}
+
+	header .MobileMenu .LanguageSelector
+	{
+		z-index: 10;
+	}
+
+	body header.ShowMobileMenu .LanguageSelector
+	{
+		display   : block;
+		position  : absolute;
+		top       : 0;
+		left      : 50%;
+		transform : translateX(-50%);
+		margin-top: 20px;
+	}
+
+	body header .LanguageSelector ul.level_2
+	{
+		display    : none;
+		margin-left: -15px;
+	}
+
+	header .MobileMenu .LanguageSelector li.submenu
+	{
+		width: 60px;
+	}
+
+	header .LanguageSelector li.submenu span:after
+	{
+		top: 24px;
+	}
+
+}
+
+
+/* task 02.09.2024 */
+#header nav.mod_navigation ul.level_1 li.submenu ul.level_2 li:first-child{
+	margin-left: inherit;
+}
+#header nav.mod_navigation ul.level_1 li.submenu ul.level_2 li:last-child{
+	margin-right: inherit;
+}
+#header nav.mod_navigation.block{
+	overflow: inherit;
+}
+/* task 02.09.2024 */
